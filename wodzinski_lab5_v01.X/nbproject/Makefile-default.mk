@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=/Users/adan/MPLABXProjects/wodzinski_lab5_v01.X/wodzinksi_lab5_main.c
+SOURCEFILES_QUOTED_IF_SPACED=/Users/adan/MPLABXProjects/wodzinski_lab5_v01.X/wodzinksi_lab5_main.c /Users/adan/MPLABXProjects/wodzinski_lab5_v01.X/lcd_library.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o ${OBJECTDIR}/_ext/1503674423/lcd_library.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o.d ${OBJECTDIR}/_ext/1503674423/lcd_library.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o
+OBJECTFILES=${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o ${OBJECTDIR}/_ext/1503674423/lcd_library.o
 
 # Source Files
-SOURCEFILES=/Users/adan/MPLABXProjects/wodzinski_lab5_v01.X/wodzinksi_lab5_main.c
+SOURCEFILES=/Users/adan/MPLABXProjects/wodzinski_lab5_v01.X/wodzinksi_lab5_main.c /Users/adan/MPLABXProjects/wodzinski_lab5_v01.X/lcd_library.c
 
 
 
@@ -95,12 +95,24 @@ ${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o: /Users/adan/MPLABXProjects/w
 	@${RM} ${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  /Users/adan/MPLABXProjects/wodzinski_lab5_v01.X/wodzinksi_lab5_main.c  -o ${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
+${OBJECTDIR}/_ext/1503674423/lcd_library.o: /Users/adan/MPLABXProjects/wodzinski_lab5_v01.X/lcd_library.c  .generated_files/flags/default/145c66d342ea8ef2d85f59aab88f3e0eb67ce565 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1503674423" 
+	@${RM} ${OBJECTDIR}/_ext/1503674423/lcd_library.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1503674423/lcd_library.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  /Users/adan/MPLABXProjects/wodzinski_lab5_v01.X/lcd_library.c  -o ${OBJECTDIR}/_ext/1503674423/lcd_library.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/1503674423/lcd_library.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
 else
 ${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o: /Users/adan/MPLABXProjects/wodzinski_lab5_v01.X/wodzinksi_lab5_main.c  .generated_files/flags/default/d3fc6a83e954c0bbf8bdc7009ab3ef7b93a30b54 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/1503674423" 
 	@${RM} ${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  /Users/adan/MPLABXProjects/wodzinski_lab5_v01.X/wodzinksi_lab5_main.c  -o ${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/1503674423/wodzinksi_lab5_main.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
+${OBJECTDIR}/_ext/1503674423/lcd_library.o: /Users/adan/MPLABXProjects/wodzinski_lab5_v01.X/lcd_library.c  .generated_files/flags/default/7f1d7cdd5706da5b0c54bf81cd0c9e2130de0d40 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1503674423" 
+	@${RM} ${OBJECTDIR}/_ext/1503674423/lcd_library.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1503674423/lcd_library.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  /Users/adan/MPLABXProjects/wodzinski_lab5_v01.X/lcd_library.c  -o ${OBJECTDIR}/_ext/1503674423/lcd_library.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/_ext/1503674423/lcd_library.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
 endif
 
